@@ -3,7 +3,7 @@ The program movie2scan takes a movie of a laser scan during exactly one revoluti
 
 # Dependencies:
 - Opencv >= 2.6.2
-The file "cv_compatible.h" located in the "docs" folder must replace the original "cv.h" on your file system.
+The file "cv_compatible.h" located in the "docs" folder must be put in the same folder than the original "cv.h", usually "/usr/include/opencv/".
 
 # Compilation with cmake
 $ cd movie2scan/
