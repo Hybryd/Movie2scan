@@ -1,0 +1,16 @@
+# Description:
+The program movie2scan takes a movie of a laser scan during exactly one revolution and computes the corresponding point cloud. Moreover, it uses a simple (but not so good) algorithm to triangulate the points on the fly.
+
+# Dependencies:
+- Opencv >= 2.6.2
+
+# Compilation with cmake
+$ cd movie2scan/
+$ cmake .
+$ make
+
+# Usage
+$ ./movie2scan movieFileName.webm calParamFileName.xml outputFileName
+- movieFileName.webm: video file in webm format (other usual formats/codecs might be supported)
+- calParamFileName.xml: XML file containing the 3x4 transformation matrix and the 3x1 normal vector. Those objects are generated after a calibration of the system camera+laser.
+- outputFileName: this is the suffixe of the output, written without extension. Example : with "data", the program produces the files "data.xyz" and "data.mesh".
