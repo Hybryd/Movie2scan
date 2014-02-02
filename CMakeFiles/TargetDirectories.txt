@@ -1,1 +1,0 @@
-/home/kf/Prog/GitHub/Movie2scan/CMakeFiles/movie2scan.dir
